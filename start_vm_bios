@@ -1,5 +1,7 @@
 #!/bin/bash
 
-
+echo "Usage: $1 [ -cdrom ubuntu.iso ] "
+echo "OR [ -net nic -net user,hostfwd=tcp::3389-:3389] "
+echo "[ -bios /usr/share/ovmf/OVMF.fd (for UEFI BOOT! works, even rescue is booted via LegacyBios ] "
 
 qemu-system-x86_64 -enable-kvm -smp 4 -m 4096 -usbdevice tablet -k de -boot menu=on,splash-time=30000  -cpu host -drive file=/dev/sda,format=raw,media=disk -vnc 127.0.0.1:1 $@
