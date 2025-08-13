@@ -10,13 +10,19 @@ cd hetzner_tools
 
 chmod u+x *
 
-## windows
+## get windows isos
 
 ./get_w2025_iso
 
 ./get_w2022_iso
 
 ./get_w2019_iso
+
+IF download is very slow: 
+
+try it from my storagebox
+
+./get_isos_from_storagebox
 
 
 # start VM via qemu-kvm
