@@ -2,7 +2,7 @@
 my tools for hetzner dedi servers
 
 
-download: 
+## Download tools: 
 
 git clone https://github.com/antonseitz/hetzner_tools
 
