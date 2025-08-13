@@ -1,5 +1,11 @@
 #!/bin/bash
 
 
-ssh -p22 u318566@u318566.your-storagebox.de ls -la /home/ISO/template/iso
+ssh -p23 u318566@u318566.your-storagebox.de ls -la /home/ISO/template/iso
+
+echo "Give name of ISO you want to download:"
+read ISO
+
+
+rsync --progress   -e "ssh -p23" u318566@u318566.your-storagebox.de:/home/ISO/template/iso/$ISO .
 
