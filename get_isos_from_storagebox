@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+ssh -p22 u318566@u318566.your-storagebox.de ls -la /home/ISO/template/iso
+
